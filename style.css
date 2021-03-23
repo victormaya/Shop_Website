@@ -22,10 +22,11 @@ body {
   background-image: url(./assets/background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position-y: 25.25%;
+  background-position-y: 44.4%;
+  padding: 0 1rem;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,27 +42,198 @@ header{
   padding: 1rem;
   background-color: #e67e34;
 }
-nav ul{
+nav ul {
   display: flex;
 }
 
-.li-nav:hover{
-  color: #e67e34;
-  cursor: pointer;
-}
-.li-nav{
+.li-nav,
+.item {
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-  
-.fa-shopping-bag, .busca{
-  margin-right: 6.25rem;
+.li-nav:hover,
+.item:hover {
+  color: #e67e34;
+  cursor: pointer;
 }
 
-.conta{
-  margin-right: 2rem;
+.fa-shopping-bag,
+.busca {
+  margin-right: 6vw;
 }
 
+.conta {
+  margin-right: 2vw;
+}
 
+.conteudo {
+  display: flex;
+  padding: 9rem 0rem;
+  justify-content: space-between;
+}
+
+.conteudo__esquerdo{
+  display: flex;
+}
+
+.menu__lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 50vh;
+}
+
+.item {
+  margin-bottom: 1.2rem;
+  text-align: center;
+  width: 4vw;
+}
+
+.redes {
+  display: flex;
+}
+.redes li {
+  margin-right: 2vw;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.redes li:hover {
+  cursor: pointer;
+  color:#e67e34;
+
+}
+
+.title__preco__button {
+  margin-left: 9vw;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 6px;
+  color: #e67e34;
+}
+
+.preco {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-family: "Open Sans", sans-serif;
+  margin: 1rem 0;
+  margin-top: 0.5rem;
+}
+
+.button {
+  background-color: #d8d8d8;
+  padding: 1rem;
+  display: flex;
+  position: relative;
+  left: -1rem;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+  font-size: 1rem;
+  width: 1.5vw;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.button:hover {
+  background-color: #dad7d1;
+  cursor: pointer;
+  width: 2.2vw;
+}
+
+.icon__prev {
+  position: relative;
+  left: -1.6rem;
+}
+
+.next__tamanho__button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.tamanhos {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  width: 8.5vw;
+}
+
+.tamanho {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: solid 2px #d8d8d8;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.tamanho:hover{
+  border-color: #e67e34;
+}
+
+.tamanho:nth-child(2) {
+  margin: 0 1rem;
+}
+
+.button__next {
+  margin-left: 5.7rem;
+}
+
+.next {
+  position: relative;
+  left: -1.6rem;
+}
+.quantidade {
+  display: flex;
+  background-color: #fff;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-weight: bolder;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  width: 7vw;
+  border: #d8d8d8 1px solid;
+}
+
+.quantidade p {
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.quantidade p:nth-child(2) {
+  cursor: default;
+}
+
+.quantidade p:hover{
+  color: #e67e34  
+}
+.quantidade p:nth-child(2):hover{
+  color: black
+}
+
+.button__add{
+  background-color: #e67e34;
+  padding: 1rem;
+  width: 7vw;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.button__add:hover{
+  background-color: #d35400;
+}
